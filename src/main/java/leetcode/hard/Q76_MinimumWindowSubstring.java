@@ -17,6 +17,9 @@ import java.util.Map;
  */
 public class Q76_MinimumWindowSubstring {
 
+    /**
+     * 滑动窗口实现
+     */
     public String minWindow(String s, String t) {
         if (s.length() < t.length()) return "";
         Map<Character, Integer> smap = new HashMap<>();//窗口内字符
